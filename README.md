@@ -3,7 +3,7 @@ Tehtävät ovat osa Tero Karvisen Palvelinten hallinta (Configuration Management
 Kurssitoteutus, tarkemmat tehtäväkuvaukset sekä tehtävän lähteet löytyvät [**täältä**](https://terokarvinen.com/2022/palvelinten-hallinta-2022p2/)
 
 Tehtävät on toteutettu Virtual Boxiin (Versio 6.1) asennetulla Ubuntun käyttöjärjestelmällä (versio 22.04.1).
-Tehtävät on tehty 22.11.2022 ja tehtävän lähteinä on käytetty luennolla hyödynnettyjä muistiinpanoja.
+Tehtävät on tehty marraskuussa 2022 ja tehtävän lähteinä on käytetty luennolla hyödynnettyjä muistiinpanoja.
 Luennon piti Tero Karvinen (17.11.2022) ja se oli kurssin neljäs luento, jonka aiheena oli "Omat komennot".
 
 Tehtäväraportti on kirjoitettu markdownilla Ubuntussa ja siirretty sieltä GitHubiin hyödyntäen SSH-yhteyttä.
@@ -148,3 +148,7 @@ Näyttäisi toimivan.
 
 ## f) Lukua, ei luottamusta. Kokeile yhtä kohdassa e-Intel löytämääsi modulia koneella.
 ##Tämä on infraa koodina, joten luottamusta ei tarvita. Voit lukea koodista, mitä olet ajamassa.
+
+
+Lähteet:
+Tero Karvinen 2022. Configuration Management Systems - Palvelinten hallinta. Luettavissa: https://terokarvinen.com/2022/palvelinten-hallinta-2022p2/. Luettu 21.11.2022.
