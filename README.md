@@ -11,12 +11,20 @@ Tehtäväraportti on kirjoitettu markdownilla Ubuntussa ja siirretty sieltä Git
 
 ## a) Hei komento! Tee järjestelmään uusi "hei maailma" -komento ja asenna se orjille Saltilla. Liitä raporttiisi orjan 'ls- l/urs/local/bin/' tulosteesta ainakin se rivi, jolla näkyy uuden komentotiedostosi oikeudet.
 
+En ole täysin varma, ymmärsinkö tehtävänantoa oikein, mutta lähdin tässä luomaan txt-tiedostoa, jonka ajoin saltilla orjille.
+
+Tehtävän kulku:
+Ensin tein päivitykset.
+
+    sudo apt-get update
+    sudo apt-get upgrade
+
 Tarkistin, että Salt löytyy koneeltani. Komento "Salt" varmisti, että kaikki ok.
 Sitten siirryin salt-hakemistoon
 
     cd /srv/salt
 
-Loin heimaailma-tekstitiedoston  heimaailma.txt simppelillä sisällöllä "Hei Maailma!".
+Loin heimaailma-tekstitiedoston heimaailma.txt simppelillä sisällöllä "Hei Maailma!".
 Tämän jälkeen muutin oikeudet ja kopsasin sen biniin:
     
     sudo chmod ugo+x heimaailma.txt 
@@ -33,6 +41,7 @@ Ajetaan heimaailma orjille:
     sudo salt-call --local state.apply heimaailma
 
 Tämä näytti toimivan.
+
 <img width="365" alt="image" src="https://user-images.githubusercontent.com/117899949/203038720-763dd2e2-dea5-4055-b57d-3951aa2446c3.png">
 
 Mennään kurkkaamaan usr/local/biniin heimaailma tiedoston oikeudet.
@@ -141,13 +150,13 @@ Mennään roottiin ja ajetaan
 
 Näyttäisi toimivan.
 
-## e) Intel. Etsi [kolme loppuprojektia](https://terokarvinen.com/search/?q=palvelinten+hallinta) joltain vanhalta kurssitoteutukselta.
-## Kuvaile tiiviisti, viittaa ja linkitä alkuperäiseen raporttiin. 
+## e) Intel. Etsi [kolme loppuprojektia](https://terokarvinen.com/search/?q=palvelinten+hallinta) joltain vanhalta kurssitoteutukselta. Kuvaile tiiviisti, viittaa ja linkitä alkuperäiseen raporttiin. 
 
 
 
 ## f) Lukua, ei luottamusta. Kokeile yhtä kohdassa e-Intel löytämääsi modulia koneella.
 ##Tämä on infraa koodina, joten luottamusta ei tarvita. Voit lukea koodista, mitä olet ajamassa.
+
 
 
 Lähteet:
