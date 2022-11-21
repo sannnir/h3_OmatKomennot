@@ -10,17 +10,35 @@ Tehtäväraportti on kirjoitettu markdownilla Ubuntussa ja siirretty sieltä Git
 
 
 ## a) Hei komento! Tee järjestelmään uusi "hei maailma" -komento ja asenna se orjille Saltilla. Liitä raporttiisi orjan 'ls- l/urs/local/bin/' tulosteesta ainakin se rivi, jolla näkyy uuden komentotiedostosi oikeudet.
-    Sakdfjlkfjksdjfkjdsfkdjsf
-    dsfkdsfjn
+
+Tarkistin, että Salt löytyy koneeltani. Komento "Salt" varmisti, että kaikki ok.
+Sitten siirryin salt-hakemistoon
+
+    cd /srv/salt
+
+Loin heimaailma-tekstitiedoston  heimaailma.txt simppelillä sisällöllä "Hei Maailma!".
+Tämän jälkeen muutin oikeudet ja kopsasin sen biniin:
     
+    sudo chmod ugo+x heimaailma.txt 
+    sudo cp heimaailma.txt /usr/local/bin/
+
+Tämän jälkeen loin salt state-tiedoston:
     
-Kokeilin luoda tänne hei maailma- tiedoston helloworld.sls kaikista yksinkertaisimmillaan ensin, jotta voisin sitten testata hiljalleen, että kaikki toimii.
+    sudo micro heimaailma.sls
+    
+<img width="267" alt="image" src="https://user-images.githubusercontent.com/117899949/203038122-2a5485e1-7990-4f5b-b152-9e08568b7380.png">
 
-<img width="272" alt="2" src="https://user-images.githubusercontent.com/117899949/203021029-849c8857-6958-4268-acbd-6d8fcbe3f722.png">
+Ajetaan heimaailma orjille:
 
-Koitin saada komentoa vietyä orjille siinä kuitenkaan onnistumatta. Sain jatkuvasti error-viestin, enkä tiedä, mistä se johtui. Kokeilin myös ajaa pelkkää saltscripts-kansiota, mutta sain samanlaisen errorviestin. En siis saanut tehtävää tehtyä.
+    sudo salt-call --local state.apply heimaailma
 
-<img width="358" alt="3" src="https://user-images.githubusercontent.com/117899949/203021567-9dcfb6a8-9ed5-4186-a329-3da9cbb15934.png">
+Tämä näytti toimivan.
+<img width="365" alt="image" src="https://user-images.githubusercontent.com/117899949/203038720-763dd2e2-dea5-4055-b57d-3951aa2446c3.png">
+
+Mennään kurkkaamaan usr/local/biniin heimaailma tiedoston oikeudet.
+Oikeudet ovat ne, jotka aiemmin määriteltiin, eli ownerille rwx, groupille ja othersille read ja execute.
+
+<img width="341" alt="image" src="https://user-images.githubusercontent.com/117899949/203039408-9647deb7-0baa-436c-b952-69b432b17144.png">
 
 
 ## b) whatsup.sh. Tee järjestelmään uusi komento, joka kertoo ajankohtaisia tietoja; asenna se orjille.
@@ -77,7 +95,7 @@ Eli muutetaan oikeidet ja kopsataan hello.py usr/local/biniin ja testataan jossa
     
 Siirryin roottiin kokeilemaan koodin toimivuutta ja kaikki ok.
 
-    <img width="245" alt="c1" src="https://user-images.githubusercontent.com/117899949/203026495-90d516dc-99c6-419c-8da0-ce478b9ccbad.png">
+<img width="245" alt="c1" src="https://user-images.githubusercontent.com/117899949/203026495-90d516dc-99c6-419c-8da0-ce478b9ccbad.png">
 
 
 ## d) Laiskaa skriptailua. Tee kansio, josta jokainen skripti kopioituu orjille.
