@@ -90,6 +90,11 @@ Aloitin luomalla kansion scripteille:
 
 Loin tässä kohtaa kolme erilaista bash-script tiedostoa:
 whatsup.sh, hello.sh & moi.sh
+
+Testasin, että scriptit toimii paikallisesti.
+
+<img width="331" alt="dtest" src="https://user-images.githubusercontent.com/117899949/203033987-118ecbaa-4ca7-4ed9-b7c8-4c5c7916154d.png">
+
 Muutin kaikille oikeudet sudo chmod ugo+x <tiedostonnimi> ja kävin kopioimassa ne biniin.
 
 Tämän jälkeen loin init.sls-tiedoston ja tajusin samalla, että aiempi oikeuksien muuttaminen oli turhaa, sillä se voidaan määrittää state-tiedostossa, kun määrittelee "mode:n" ja laittaa oikeudeksi 755.
@@ -105,6 +110,9 @@ Sourceen määritellään salt-polku tiedostoille ja modeen oikeudet.
 
 <img width="360" alt="d2" src="https://user-images.githubusercontent.com/117899949/203032397-dd4e400d-dbfb-4a62-884f-ac1b91294d9a.png">
 
+Tämän jälkeen kokeilin ajaa ko. kansion orjille salt-komennolla:
+    
+    sudo salt-call '*' state.apply saltscripts
 
 ## e) Intel. Etsi [kolme loppuprojektia](https://terokarvinen.com/search/?q=palvelinten+hallinta) joltain vanhalta kurssitoteutukselta.
 ## Kuvaile tiiviisti, viittaa ja linkitä alkuperäiseen raporttiin. 
