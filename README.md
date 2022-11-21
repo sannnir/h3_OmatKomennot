@@ -1,6 +1,6 @@
 # h3 Omat komennot
 Tehtävät ovat osa Tero Karvisen Palvelinten hallinta (Configuration Management Systems)- kurssia.
-Kurssitoteutus, tarkemmat tehtäväkuvaukset sekä tehtävän lähteet löytyvät [**täältä**](https://terokarvinen/2022/palvelinten-hallinta-2022p2/)
+Kurssitoteutus, tarkemmat tehtäväkuvaukset sekä tehtävän lähteet löytyvät [**täältä**](https://terokarvinen.com/2022/palvelinten-hallinta-2022p2/)
 
 Tehtävät on toteutettu Virtual Boxiin (Versio 6.1) asennetulla Ubuntun käyttöjärjestelmällä (versio 22.04.1).
 Tehtävät on tehty 22.11.2022 ja tehtävän lähteinä on käytetty luennolla hyödynnettyjä muistiinpanoja.
