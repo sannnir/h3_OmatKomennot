@@ -9,9 +9,7 @@ Luennon piti Tero Karvinen (17.11.2022) ja se oli kurssin neljäs luento, jonka 
 Tehtäväraportti on kirjoitettu markdownilla Ubuntussa ja siirretty sieltä GitHubiin hyödyntäen SSH-yhteyttä.
 
 
-## a) Hei komento! Tee järjestelmään uusi "hei maailma" -komento ja asenna se orjille Saltilla.
-##Liitä raporttiisi orjan 'ls- l/urs/local/bin/' tulosteesta ainakin se rivi,
-## jolla näkyy uuden komentotiedostosi oikeudet.
+## a) Hei komento! Tee järjestelmään uusi "hei maailma" -komento ja asenna se orjille Saltilla. Liitä raporttiisi orjan 'ls- l/urs/local/bin/' tulosteesta ainakin se rivi, jolla näkyy uuden komentotiedostosi oikeudet.
 
 
 
