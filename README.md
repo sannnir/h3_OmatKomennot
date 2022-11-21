@@ -95,9 +95,7 @@ Testasin, että scriptit toimii paikallisesti.
 
 <img width="331" alt="dtest" src="https://user-images.githubusercontent.com/117899949/203033987-118ecbaa-4ca7-4ed9-b7c8-4c5c7916154d.png">
 
-Muutin kaikille oikeudet sudo chmod ugo+x <tiedostonnimi> ja kävin kopioimassa ne biniin.
-
-Tämän jälkeen loin init.sls-tiedoston ja tajusin samalla, että aiempi oikeuksien muuttaminen oli turhaa, sillä se voidaan määrittää state-tiedostossa, kun määrittelee "mode:n" ja laittaa oikeudeksi 755.
+Tässä kohtaa ei muuteta oikeuksia, sillä ne voidaan määrittää state.tiedostoon, jonka loin samaan saltscriptit kansioon nimellä: init.sls
 
 State-tiedostoon lisätään kaikki aiemmin kolme luomaami scripti-tiedostoa jokainen omana kappaleenaan.
 Sourceen määritellään salt-polku tiedostoille ja modeen oikeudet.
@@ -115,7 +113,15 @@ Tämän jälkeen kokeilin ajaa ko. kansion orjille salt-komennolla:
     sudo salt '*' state.apply saltscripts
     
 <img width="366" alt="image" src="https://user-images.githubusercontent.com/117899949/203034361-75d149ad-c9b1-4a24-addc-afa28eb6c556.png">
+    
+Resultiksi saadaan "True" kaikkien kolmen scriptin osalta, mutta nyt pitäisi vielä testata, että toimiiko ko. scriptit orjilla.
+Mennään roottiin ja ajetaan 
+    
+    moi.sh
 
+<img width="196" alt="image" src="https://user-images.githubusercontent.com/117899949/203035230-4ce60210-3a1c-4873-a99e-f4fae7b4a67d.png">
+
+Näyttäisi toimivan.
 
 ## e) Intel. Etsi [kolme loppuprojektia](https://terokarvinen.com/search/?q=palvelinten+hallinta) joltain vanhalta kurssitoteutukselta.
 ## Kuvaile tiiviisti, viittaa ja linkitä alkuperäiseen raporttiin. 
