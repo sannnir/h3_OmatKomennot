@@ -10,9 +10,9 @@ Tehtäväraportti on kirjoitettu markdownilla Ubuntussa ja siirretty sieltä Git
 
 
 ## a) Hei komento! Tee järjestelmään uusi "hei maailma" -komento ja asenna se orjille Saltilla. Liitä raporttiisi orjan 'ls- l/urs/local/bin/' tulosteesta ainakin se rivi, jolla näkyy uuden komentotiedostosi oikeudet.
-Aloitin luomalla kansion scripteille:
-
-    mkdir saltscripts
+    Sakdfjlkfjksdjfkjdsfkdjsf
+    dsfkdsfjn
+    
     
 Kokeilin luoda tänne hei maailma- tiedoston helloworld.sls kaikista yksinkertaisimmillaan ensin, jotta voisin sitten testata hiljalleen, että kaikki toimii.
 
@@ -69,7 +69,7 @@ Testataan koodin toimivuutta ajamalla se komennolla python3
     
     python3 hello.py
 
-Tuloste ok, scripti siis toimii. Tehdään sama, kun edellisessä tehtävässä.
+Tuloste ok, scripti siis toimii työhakemistossa. Tehdään sama, kun edellisessä tehtävässä, jotta saadaan scripti toimimaan kaikkialla.
 Eli muutetaan oikeidet ja kopsataan hello.py usr/local/biniin ja testataan jossain muussa hakemistossa, toimiiko scripti pelkällä hello.py- komennolla.
 
     chmod ugo+x hello.py
@@ -81,6 +81,27 @@ Siirryin roottiin kokeilemaan koodin toimivuutta ja kaikki ok.
 
 
 ## d) Laiskaa skriptailua. Tee kansio, josta jokainen skripti kopioituu orjille.
+Aloitin tehtävän a-luomalla skritpikansion, joten hyödynnetään tätä.
+
+Aloitin luomalla kansion scripteille:
+
+    cd /srv/salt
+    mkdir saltscripts
+
+Loin tässä kohtaa kolme erilaista bash-script tiedostoa:
+whatsup.sh, hello.sh & moi.sh
+Muutin kaikille oikeudet sudo chmod ugo+x <tiedostonnimi> ja kävin kopioimassa ne biniin.
+
+Tämän jälkeen loin init.sls-tiedoston ja tajusin samalla, että aiempi oikeuksien muuttaminen oli turhaa, sillä se voidaan määrittää state-tiedostossa, kun määrittelee "mode:n" ja laittaa oikeudeksi 755.
+
+State-tiedostoon lisätään kaikki aiemmin kolme luomaami scripti-tiedostoa jokainen omana kappaleenaan.
+Sourceen määritellään salt-polku tiedostoille ja modeen oikeudet.
+    
+    /usr/local/bin/<tiedostonnimi>:
+      file.managed:
+        - source: salt://<kansionnimi>/<tiedostonnimi>
+        - mode: wrx-oikeuksien määrittely
+
 
 
 
