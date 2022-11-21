@@ -103,6 +103,7 @@ Sourceen määritellään salt-polku tiedostoille ja modeen oikeudet.
         - mode: wrx-oikeuksien määrittely
 
 
+<img width="360" alt="d2" src="https://user-images.githubusercontent.com/117899949/203032397-dd4e400d-dbfb-4a62-884f-ac1b91294d9a.png">
 
 
 ## e) Intel. Etsi [kolme loppuprojektia](https://terokarvinen.com/search/?q=palvelinten+hallinta) joltain vanhalta kurssitoteutukselta.
