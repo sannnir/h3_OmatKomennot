@@ -112,7 +112,10 @@ Sourceen määritellään salt-polku tiedostoille ja modeen oikeudet.
 
 Tämän jälkeen kokeilin ajaa ko. kansion orjille salt-komennolla:
     
-    sudo salt-call '*' state.apply saltscripts
+    sudo salt '*' state.apply saltscripts
+    
+<img width="366" alt="image" src="https://user-images.githubusercontent.com/117899949/203034361-75d149ad-c9b1-4a24-addc-afa28eb6c556.png">
+
 
 ## e) Intel. Etsi [kolme loppuprojektia](https://terokarvinen.com/search/?q=palvelinten+hallinta) joltain vanhalta kurssitoteutukselta.
 ## Kuvaile tiiviisti, viittaa ja linkitä alkuperäiseen raporttiin. 
