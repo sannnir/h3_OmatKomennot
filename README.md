@@ -1,4 +1,4 @@
-# h3 Omat komennot
+# h4 Omat komennot
 Tehtävät ovat osa Tero Karvisen Palvelinten hallinta (Configuration Management Systems)- kurssia.
 Kurssitoteutus, tarkemmat tehtäväkuvaukset sekä tehtävän lähteet löytyvät [**täältä**](https://terokarvinen.com/2022/palvelinten-hallinta-2022p2/)
 
@@ -47,9 +47,9 @@ Kopioidaan/asetetaan skripti muille käyttäjille biniin
 
     sudo cp whatsup.sh /usr/local/bin
     
-Kokeillaan, toimiiko skripti myös muissa hakemistoissa. Menin kotihakemistoon ja ajoin koodin:
+Kokeillaan, toimiiko skripti myös muissa hakemistoissa pelkällä tiedoston nimellä. Menin kotihakemistoon ja ajoin koodin:
 
-    whatsup
+    whatsup.sh
 
 <img width="362" alt="b2" src="https://user-images.githubusercontent.com/117899949/203022705-445812be-051f-4175-87c9-88036f6c325d.png">
 
@@ -58,6 +58,27 @@ Toimi, kaikki ok!
 ## c) hello.py. Tee järjestelmään uusi komento Pythonilla ja asenna se orjille.
 ##Shebang on '#!/usr/bin/python3'
 
+Mennään jälleen scripts-kansioon.
+Avataan micro ja luodaan hello.py- tiedosto. Luodaan yksinkertainen python3 koodi, kuten "hello".
+Testataan koodin toimivuutta ajamalla se komennolla python3
+
+    cd scripts/
+    micro hello.py
+    
+    #!/usr/bin/python3
+    print("Hello!")
+    
+    python3 hello.py
+
+Tuloste ok, scripti siis toimii. Tehdään sama, kun edellisessä tehtävässä.
+Eli muutetaan oikeidet ja kopsataan hello.py usr/local/biniin ja testataan jossain muussa hakemistossa, toimiiko scripti pelkällä hello.py- komennolla.
+
+    chmod ugo+x hello.py
+    sudo cp hello.py /usr/local/bin/
+    
+Siirryin roottiin kokeilemaan koodin toimivuutta ja kaikki ok.
+
+    <img width="245" alt="c1" src="https://user-images.githubusercontent.com/117899949/203026495-90d516dc-99c6-419c-8da0-ce478b9ccbad.png">
 
 
 ## d) Laiskaa skriptailua. Tee kansio, josta jokainen skripti kopioituu orjille.
