@@ -55,8 +55,7 @@ Kokeillaan, toimiiko skripti myös muissa hakemistoissa pelkällä tiedoston nim
 
 Toimi, kaikki ok!    
 
-## c) hello.py. Tee järjestelmään uusi komento Pythonilla ja asenna se orjille.
-##Shebang on '#!/usr/bin/python3'
+## c) hello.py. Tee järjestelmään uusi komento Pythonilla ja asenna se orjille. Shebang on '#!/usr/bin/python3'
 
 Mennään jälleen scripts-kansioon.
 Avataan micro ja luodaan hello.py- tiedosto. Luodaan yksinkertainen python3 koodi, kuten "hello".
@@ -65,8 +64,8 @@ Testataan koodin toimivuutta ajamalla se komennolla python3
     cd scripts/
     micro hello.py
     
-    #!/usr/bin/python3
-    print("Hello!")
+        #!/usr/bin/python3
+        print("Hello!")
     
     python3 hello.py
 
