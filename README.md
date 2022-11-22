@@ -153,16 +153,19 @@ Näyttäisi toimivan.
 ## e) Intel. Etsi [kolme loppuprojektia](https://terokarvinen.com/search/?q=palvelinten+hallinta) joltain vanhalta kurssitoteutukselta. Kuvaile tiiviisti, viittaa ja linkitä alkuperäiseen raporttiin. 
 
 **Projekti 1: Joonas Kulmala, Salt My Ubuntu**
+
 [Tässä](https://github.com/JoonasKulmala/Palvelinten-Hallinta/tree/main/h7) raportissa kuvaillaan automatisointiprosessia, jolla saadaan asennettua Salt Linux Ubuntulle (versio 20.14).
 Raportin idea on kloonata ko. repository (tai downloadata ZIP), modata minion-filea, ajaa bashskripti sekä confata Salt-master ja/tai Minion.
 Projektissa on kuvattu selkeät ohjeet step by step-tyyliin ja lopuksi vielä testataan ratkaisua.
 
 **Projekti 2: Jani Aulavuo Palvelinten hallinta: Salt LAMP Stack**
-[Tässä](https://bgm064.wordpress.com/2021/04/06/palvelinten-hallinta-2021-h1/8/)raportissa luotiin salt-tila, joka asentaa LAMP Stack- ohjelmointipinon, UFW-palomuurin sekä Firefox-selaimen.
+
+[Tässä](https://bgm064.wordpress.com/2021/04/06/palvelinten-hallinta-2021-h1/8/) raportissa luotiin salt-tila, joka asentaa LAMP Stack- ohjelmointipinon, UFW-palomuurin sekä Firefox-selaimen.
 Raportin alussa on kuvattu alkuun hieman teoriaa siitä, mistä LAMP Stack koostuu (Linux, Apache, MySQL, PHP), jonka jälkeen lähdetään kuvaamaan työosuutta.
 Raportti on enemmän kuvaileva, kun ohjeistava, vaikka se sisältääkin ohjeistuksen ko. tehtävään.
 
 **Projekti 3: Steam, pelikauppa, jossa paljon digitaalisia rajoitusmenetelmiä (DRM)**
+
 [Tässä](https://myllys.wordpress.com/palvelinten-hallinta-harjoitus-7-oma-moduli-spring-2021/) projektissa kuvaillaan sellaisen Salt-tilan tekemistä, joka asentaa automaattisesti steamin uudelle Ubuntu-koneelle.
 Raportissa ei kuvailla, mikä on steam, jolloin se jää asiasta tietämättömälle täysin mielikuvituksen varaan.
 Tämä raportti on ennemmän kuvaileva, kun ohjeistava, vaikkakin jokainen askel kuvaillaan yksityiskohtaisesti.
