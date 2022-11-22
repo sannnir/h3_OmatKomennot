@@ -185,6 +185,7 @@ Kloonasin ohjeiden mukaan git repositoryn ohjeiden mukaan ja kun siirryin reposi
 
 ******************
 Lähteet:
+
 Tero Karvinen 2022. Configuration Management Systems - Palvelinten hallinta. Luettavissa: https://terokarvinen.com/2022/palvelinten-hallinta-2022p2/. Luettu 21.11.2022.
 
 Joonas Kulmala 2021. Joonas Kulmala|h7|Salt My Ubuntu. Luettavissa:https://github.com/JoonasKulmala/Palvelinten-Hallinta/tree/main/h7  Luettu: 22.11.2022
