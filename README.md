@@ -174,8 +174,16 @@ Tämä raportti on ennemmän kuvaileva, kun ohjeistava, vaikkakin jokainen askel
 ## f) Lukua, ei luottamusta. Kokeile yhtä kohdassa e-Intel löytämääsi modulia koneella.
 ##Tämä on infraa koodina, joten luottamusta ei tarvita. Voit lukea koodista, mitä olet ajamassa.
 
+Lähdin kokeilemaan Joonas Kulmalan Salt My Ubuntu [ohjeistusta](https://github.com/JoonasKulmala/Palvelinten-Hallinta/tree/main/h7), sillä ohjeet olivat todella selkeät ja yksityiskohtaiset. Kokeilin ohjeita uudella Virtual Boxiin asennetulla Ubuntulla (22.04.1), johon ei oltu vielä asennettu mitään. Ensin piti toki asentaa git, että homman pystyi starttaamaan.
+
+    sudo apt-get install git
+    
+Kloonasin ohjeiden mukaan git repositoryn ohjeiden mukaan ja kun siirryin repositoryyn ja pääsin ajamaan komentoja, kuten "bash install-master" tai "bash install-minion", kaikki toimi juuri kuten piti. 
+
+<img width="361" alt="image" src="https://user-images.githubusercontent.com/117899949/203363549-8335f09f-97e1-42ff-87e0-e0bdccd1c483.png">
 
 
+******************
 Lähteet:
 Tero Karvinen 2022. Configuration Management Systems - Palvelinten hallinta. Luettavissa: https://terokarvinen.com/2022/palvelinten-hallinta-2022p2/. Luettu 21.11.2022.
 
