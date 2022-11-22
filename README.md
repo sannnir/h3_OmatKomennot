@@ -171,8 +171,7 @@ Raportissa ei kuvailla, mikä on steam, jolloin se jää asiasta tietämättöm�
 Tämä raportti on ennemmän kuvaileva, kun ohjeistava, vaikkakin jokainen askel kuvaillaan yksityiskohtaisesti.
 
 
-## f) Lukua, ei luottamusta. Kokeile yhtä kohdassa e-Intel löytämääsi modulia koneella.
-##Tämä on infraa koodina, joten luottamusta ei tarvita. Voit lukea koodista, mitä olet ajamassa.
+## f) Lukua, ei luottamusta. Kokeile yhtä kohdassa e-Intel löytämääsi modulia koneella. Tämä on infraa koodina, joten luottamusta ei tarvita. Voit lukea koodista, mitä olet ajamassa.
 
 Lähdin kokeilemaan Joonas Kulmalan Salt My Ubuntu [ohjeistusta](https://github.com/JoonasKulmala/Palvelinten-Hallinta/tree/main/h7), sillä ohjeet olivat todella selkeät ja yksityiskohtaiset. Kokeilin ohjeita uudella Virtual Boxiin asennetulla Ubuntulla (22.04.1), johon ei oltu vielä asennettu mitään. Ensin piti toki asentaa git, että homman pystyi starttaamaan.
 
